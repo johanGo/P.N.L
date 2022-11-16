@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;    
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #B256CE, #B256CE , #ffffff 70%);
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 115px;    
+    display: flex;
+    padding: 0 88px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #B256CE, #B256CE , #ffffff 70%);
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+.logo{
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;   
+    background-image: linear-gradient(#fff, #B256CE);
+}
+.links{
+    width: 713px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links a{
+    width: 80px;
+    height: 30%;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-family: 'Lateef', serif;
+    font-weight: 400;
+    text-align: center;
+}
+.links a:hover:not(:last-child){
+    border-bottom: 5px solid #BD13F0;
+}
+.links a:last-child{
+    width: 142px;
+    height: 48px;
+    background-color: #d947ec;    
+    border-radius: 23px;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    font-weight: 600;
+}
+.links a:last-child:hover{
+    background-color: #972b97;
+}
+.first-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.title-big{
+    font-size: 100px;
+    text-align: center;
+    width: 500px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+.container-img{
+    width: 425px;
+    height: 425px;
+    background-image: url(/images/logo-inicio.jpg);
+    background-repeat: no-repeat;
+    border-radius: 50%; 
+    background-color: #fff;
+    background-size: cover;
+    background-position: 0px -10px;
+    overflow: hidden;
+}
+.second-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to right, #9d39bb, #B256CE , #dfdbdb 70%);   
+    
+}
+.section-services{   
+    width: 100%;
+    height: 100%;
+}
+.title{
+    font-size: 140px;
+    font-family: 'Katibeh';
+    color: #fff;
+    margin-left: 39px;
+    margin-top: 60px;
+}
+.section-services-details{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    margin: 0;
+
+}
+.services-cepillado{
+    width: 190px;
+    height: 190px;    
+    background-image: url(/images/cepillo.jpg);
+    background-size: cover;     
+    background-position: -10px 0px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.text-cepi{
+    padding: 78px 6px;
+    font-size: 35px;
+    display: none;
+    color: #ffffff;
+    transition: 5s all;
+    font-family: 'Lakki Reddy', cursive;
+    text-transform: uppercase;
+}
+.services-cepillado:hover .text-cepi{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.767);   
+}
+
+.services-maquillaje{
+    width: 190px;
+    height: 190px;
+    background-image: url(/images/maquillar.jpg); 
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.text-maqu{
+    padding: 78px 6px;
+    font-size: 30px;
+    display: none;
+    color: #ffffff;
+    transition: 5s all;
+    font-family: 'Lakki Reddy', cursive;
+    text-transform: uppercase;
+}
+.services-maquillaje:hover .text-maqu{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.767);   
+}
+
+.services-manicure{
+    width: 190px;
+    height: 190px;
+    background-image: url(/images/zzz-1.png); 
+    background-size: cover; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.text-mani{
+    padding: 78px 12px;
+    font-size: 35px;
+    display: none;
+    color: #ffffff;
+    transition: 5s all;
+    font-family: 'Lakki Reddy', cursive;
+    text-transform: uppercase;
+}
+.services-manicure:hover .text-mani{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.767);   
+}
+
+.services-pedicure{
+    width: 190px;
+    height: 190px;
+    background-image: url(/images/pedicure\ n.jpg); 
+    background-size: cover;    
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+    top: 160px;
+    left: 135px;
+}
+.text-pedi{
+    position: absolute;
+    padding: 78px 17px;
+    font-size: 35px;
+    display: none;
+    color: #ffffff;
+    font-family: 'Lakki Reddy', cursive;
+    text-transform: uppercase;
+}
+.services-pedicure:hover .text-pedi{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.767);   
+}
+
+.services-corte{
+    width: 190px;
+    height: 190px;
+    background-image: url(/images/corte.jpg); 
+    background-size: cover;      
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+    top: 160px;
+    right: 138px;
+}
+.text-cort{
+    position: absolute;
+    padding: 78px 43px;
+    font-size: 35px;
+    display: none;
+    color: #ffffff;
+    font-family: 'Lakki Reddy', cursive;
+    text-transform: uppercase;
+}
+.services-corte:hover .text-cort{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.767);   
+}
+
+.section-imgs{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.img-cepillado{
+    width: 800px;
+    height: 500px;      
+    position: absolute;
+    right: -60px;
+    top: 125px;
+    
+}
+.third-section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #c94bf0, #B256CE , #ffffff 70%);
+    display: flex;
+}
+.container-opi{
+    width: 352px;
+    height: 437px;
+    border: 1px solid black;
+    background-image: url("/images/OPI.jpg");
+    background-size: cover;
+    background-position: -40px 0;
+    border-radius: 50%;
+    margin: 170px 157px;
+}
+.container-description-about{
+    width: 50%;
+}
+.title-about-us{
+    margin: 125px 55px 17px 0;
+    font-family: 'Katibeh';
+    font-size: 150px;
+    text-align: end;
+    color: #af3ad3;
+}
+.description-about-us{
+    font-size: 30px;
+    font-family: 'Katibeh';
+    width: 511px;
+    text-align: end;
+    margin-left: 102px;
+}
+.fourth-section{
+    background-image: linear-gradient(to right, #9d39bb, #B256CE , #dfdbdb 70%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.container-box{
+    width: 607px;
+    height: 429px;
+    background-color: white;
+    margin: 150px 60px;
+    border-radius: 40px;
+}
+.title-contact{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Katibeh';
+    margin: 10px 0;
+}
+.description-contact{
+    width: 469px;
+    height: 84px;
+    margin: 0 auto;
+    font-size: 23px;
+    font-family: 'Katibeh';
+}
+.input{    
+    display: block;
+}
+.name{
+    width: 298px;
+    height: 27px;
+    border-radius: 8px;    
+    margin: 30px 65px 0;
+    border: 1px solid black;
+}
+.name::placeholder{
+    margin:0;
+    padding: 5px ;
+    
+}
+.email{
+    width: 298px;
+    height: 27px;
+    border-radius: 8px;
+    margin: 14px 65px;
+    border: 1px solid black;
+}
+.email::placeholder{
+    padding: 5px;
+}
+.message{
+    width: 370px;
+    height: 62px;
+    border-radius: 8px;
+    margin: 0px 65px;
+    resize: none;
+    border: 1px solid black;
+}
+.message::placeholder{
+    padding: 5px;    
+}
+.button-enviar{
+    width: 232px;
+    height: 49px;
+    font-size: 40px;    
+    font-family: 'Katibeh';
+    margin: 20px auto;
+    display: grid;
+    place-content: center;
+    border-radius: 13px;
+    background-color: #d051f6a4;
+    border: none;
+    padding-bottom: 14px;    
+}
+.button-enviar:hover{
+    background-color: #d051f6f5;
+    cursor: pointer;
+}
+.container-social-medias{
+    width: 540px;
+    height: 429px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    margin: 150px 0;
+}
+.social-media-ig{
+    width: 366px;
+    height: 60px;
+    /* background-color: #D051F6; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.name-ig{
+    width: 328px;
+    height: 32px;
+    background-image: linear-gradient(to right, #5F38E3, #EA178B , #FB363E, #FFC761);
+    border-radius: 15px;
+    position: absolute;
+}
+.name-ig p{
+    color: white;
+    font-size: 32px;
+    font-family: 'Katibeh';
+    margin-top: -8px;
+    margin-left: 66px;
+}
+.logo-ig{
+    width: 60px;
+    height: 60px;
+    background-image: url("/images/logo_ig.png");
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+.social-media-fb{
+    width: 366px;
+    height: 60px;
+    /* background-color: #D051F6; */
+    margin: -50px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.name-fb{
+    width: 328px;
+    height: 32px;
+    background-color: #066BE3;
+    border-radius: 15px;
+    position: absolute;
+}
+.name-fb p{
+    color: white;
+    font-size: 32px;
+    font-family: 'Katibeh';
+    margin-top: -8px;
+    margin-left: 108px;
+}
+.logo-fb{
+    width: 60px;
+    height: 60px;
+    background-image: url("/images/official-facebook-logo-2.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-position: -23px 0;
+    position: absolute;
+    right: 0;
+}
+.social-media-ms{
+    width: 366px;
+    height: 60px;
+    /* background-color: #D051F6; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.name-ms{
+    width: 328px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 15px;
+    position: absolute;
+}
+.name-ms p{
+    color: white;
+    font-size: 32px;
+    font-family: 'Katibeh';
+    margin-top: -8px;
+    margin-left: 34px;
+}
+.logo-ms{
+    width: 60px;
+    height: 60px;
+    background-image: url("/images/logo_message.png");
+    background-position: -24px 0;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+
+/*------------------ SECTION LOG IN ------------------*/
+
+
+.main2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( #B256CE, #B256CE , #ffffff );
+    display: grid;
+}
+.main2-box{
+    width: 507px;
+    height: 454px;
+    background-color: white;
+    border-radius: 26px;
+    place-self: center;
+}
+.container-buttons{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.iniciar-sesion{
+    width: 201px;
+    height: 52px;
+    font-size: 30px;
+    font-family: 'Katibeh';
+    background-color: #D54DFF;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding:4px;   
+    text-align: center; 
+}
+.iniciar-sesion:hover{
+    background-color: #bf03f8;
+    cursor: pointer;
+}
+.crear-cuenta{
+    width: 201px;
+    height: 52px;
+    font-size: 30px;
+    font-family: 'Katibeh';   
+    border-radius: 16px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding:4px; 
+    text-align: center;
+}
+.crear-cuenta:hover{
+    background-color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+.main2-box label{    
+    display: block;
+    font-size: 30px;
+    color: black;
+    font-family: 'Katibeh';   
+    margin: 15px 56px;
+}
+.main2-box input{
+    width: 393px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #DFB5EC;
+    margin: 0px 56px;
+    border: none;
+}
+.container-options{
+    width: 100%;
+    height: 154px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.confirm{
+    width: 172px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Katibeh';
+    background-color: #D54DFF;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding-bottom:9px;
+    cursor: pointer;
+}
+.confirm:hover{
+    background-color: #bf03f8;
+    cursor: pointer;
+}
+.options{
+    width: 184px;
+    height: 50px;
+    text-align: center;
+}
+.forget-password{
+    font-size: 22px;
+    font-family: 'Katibeh';
+    color: #000;
+    text-decoration: none;
+}
+.forget-password:hover{
+    text-decoration: underline;
+}
+.login-admin{
+    font-size: 22px;
+    font-family: 'Katibeh';
+    color: #484FEE;
+    text-decoration: none;
+}
+.login-admin:hover{
+    text-decoration: underline;
+}
+
+
+/*------------------ SECTION CREATE ACCOUNT ------------------*/
+
+
+.main3{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( #B256CE, #B256CE , #ffffff );
+    display: grid;
+}
+.main3-box{
+    width: 867px;
+    height: 481px;
+    background-color: white;
+    border-radius: 26px;
+    place-self: center;
+    padding: 0 38px;
+}
+.container-buttons2{
+    width: 100%;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.iniciar-sesion2{
+    width: 201px;
+    height: 52px;
+    font-size: 30px;
+    font-family: 'Katibeh';
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 16px;
+    padding:4px;   
+    text-align: center; 
+}
+.iniciar-sesion2:hover{
+    background-color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+.crear-cuenta2{
+    width: 201px;
+    height: 52px;
+    font-size: 30px;
+    font-family: 'Katibeh';   
+    border-radius: 16px;
+    color: rgb(255, 255, 255);
+    background-color: #D54DFF;
+    border: none;
+    padding:4px; 
+    text-align: center;
+    cursor: pointer;
+}
+.crear-cuenta2:hover{
+    background-color: #bf03f8;
+    
+}
+.container-inputs{
+    width: 800px;
+    height: 241px;
+}
+
+.container-inputs div{
+    width: 100px;
+    height: auto;
+    display: inline-block;
+      
+}
+.container-inputs .age-container{
+    margin-left: 311px;
+    margin-right: 64px; 
+}
+.container-inputs .lastName-container{
+    margin-right: 311px;
+}
+.confirmPassword-container{
+    margin-left: 310px;
+}
+.container-inputs div label{
+    width: auto;
+    height: auto;
+    display: block;    
+    font-size: 30px;
+    font-family: 'Katibeh';    
+    margin: 0px 0px 11px;  
+}
+/* .container-inputs div .label-age{
+    margin-left: 200px;
+    margin-right: 108px;
+} */
+.container-inputs div input{
+    border-radius: 10px;
+    background-color: #DFB5EC;
+    border: none;
+}
+
+.container-inputs div .label-confirmPassword{
+    width: 213px;
+}
+.container-inputs div .input-name{
+    width: 356px;
+    height: 32px;
+}
+
+.container-inputs div .input-age{
+    width: 105px;
+    height: 32px;
+}
+
+.container-inputs div .input-cel{
+    width: 216px;
+    height: 32px;
+}
+.container-inputs div .input-lastName{
+    width:356px;
+    height: 32px;
+}
+
+.container-inputs div .input-email{
+    width: 316px;
+    height: 32px;
+}
+
+.container-inputs div .password{
+    width: 356px;
+    height: 32px;
+}
+.container-inputs div .input-confirmPassword{
+    width: 356px;
+    height: 32px;
+}
+.confirm2{
+    width: 282px;
+    height: 50px;
+    display: block;
+    margin: 36px auto;
+    padding-bottom: 50px;
+    background-color: #D54DFF;
+    border-radius:18px ;
+    font-size:34px ;
+    font-family: 'Katibeh'; 
+    color:white ;
+    cursor: pointer;
+    border: none;
+}
+.confirm2:hover{
+    background-color: #bf03f8;
+
+}
+
+/*----------------- LOG IN ADMINISTRADOR-----------------------*/
+.main4{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( #000000,#5a2a68c5,#d051f6d8 ,#ffffff );
+    display: grid;
+}
+
+.main4-box{
+    width: 507px;
+    height: 454px;
+    background-color: white;
+    border-radius: 26px;
+    place-self: center;
+    padding: 0px 57px;
+}
+.main4-box p{
+    font-family: 'Katibeh';
+    font-size: 35px;
+    margin: 50px 0;
+    text-align: center;
+}
+.main4-box label{
+    font-family: 'Katibeh';
+    font-size: 30px;
+    display: block;
+}
+.main4-box input{
+    width: 393px;
+    height: 32px;
+    background-color: #DFB5EC;
+    border-radius: 10px;
+    border: none;
+    margin: 8px 0 20px 0;
+}
+.confirm3{
+    width: 239px;
+    height: 50px;
+    display: block;
+    margin: 24px auto;
+    padding-bottom: 8px;
+    background-color: #D54DFF;
+    color: white;
+    font-family: 'Katibeh';
+    font-size: 34px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;    
+}
+.confirm3:hover{
+    background-color: #bf03f8;
+
+}
